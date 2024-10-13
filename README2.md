@@ -23,8 +23,8 @@
 
 ## 1. Clonez ce dépôt :
    ```
-   git clone https://github.com/hrhouma/RLCode3.git
-   cd mountain-car-qlearning
+   git clone https://github.com/hrhouma/RLCode2.git
+   cd RLCode2
    ```
 
 ## 2. Créez un environnement virtuel :
