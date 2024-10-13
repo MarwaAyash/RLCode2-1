@@ -1,3 +1,14 @@
+```
+git clone https://github.com/hrhouma/RLCode2-1.git
+cd RLCode2-1
+python3 -m venv mountain_car_env (ici python3 et non python)
+mountain_car_env\Scripts\activate
+python nom_du_script.py  (Ici python et non python3)
+pip install -r requirements.txt
+python main.py
+deactivate
+```
+
 
 # 1. Cloner le projet
 
