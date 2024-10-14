@@ -1,3 +1,67 @@
+------------------------------
+# 1 - Explication:
+------------------------------
+
+### **Démonstration avec un seul alpha (α = 0.5)**
+
+---
+
+Ce code est une démonstration d'un agent Q-Learning qui apprend à résoudre l'environnement **MountainCar-v0** en utilisant **une seule valeur de paramètre alpha (α)**, ici **α = 0.5**. L'agent est formé pendant 2000 épisodes, et ensuite évalué sur 10 essais.
+
+#### 💡 **Alpha (α = 0.5)**
+
+---
+
+### **Explication du code :**
+
+1. **Environnement de simulation :**  
+   L'environnement **MountainCar-v0** de **OpenAI Gym** est utilisé. Dans cet environnement, une voiture doit apprendre à gravir une colline en prenant de l'élan.
+
+2. **Agent Q-Learning (avec α = 0.5) :**  
+   - L'agent Q-Learning est créé avec un taux d'apprentissage (alpha) de **0.5**.  
+   - L'agent apprend à sélectionner des actions optimales pour maximiser ses récompenses. 
+   - La table Q est mise à jour en fonction des récompenses reçues après chaque action.
+
+3. **Phases du programme :**
+
+   - **Phase d'apprentissage :**  
+     L'agent s'entraîne pendant **2000 épisodes**. Pendant cette phase, il explore différentes actions pour apprendre à maîtriser l'environnement.
+   
+   - **Phase d'évaluation :**  
+     Après l'apprentissage, l'agent est évalué sur **10 essais**. Pendant chaque essai, vous verrez la voiture se déplacer en temps réel dans une fenêtre **gym**. L'objectif de l'agent est de monter la colline en **moins de 200 pas de temps**.
+   
+   - **Suivi des résultats :**  
+     Pour chaque essai, le nombre de **pas de temps** est enregistré, ainsi que le **succès** ou l'**échec** de l'agent (réussir à monter la colline en moins de 200 pas). Les résultats sont affichés à la fin sous forme de graphiques.
+
+4. **Affichage des résultats :**
+   - **Graphique des succès/échecs** : Un graphique montre si l'agent a réussi ou échoué pour chaque essai.
+   - **Graphique du nombre de pas** : Un autre graphique montre le nombre de pas nécessaires pour chaque essai.
+   - **Statistiques globales** : Le taux de succès, la moyenne et la médiane des pas sont calculés et affichés en bas des graphiques.
+
+### **Détails des paramètres :**
+- **Episodes d'entraînement :** 2000
+- **Nombre d'actions possibles :** 3 (aller à gauche, ne rien faire, aller à droite)
+- **Nombre d'essais d'évaluation :** 10
+- **Alpha (lr - taux d'apprentissage) :** 0.5
+
+### **Ce que vous verrez dans ce code :**
+- Pendant la phase d'évaluation, la voiture se déplacera en **temps réel** dans l'environnement **MountainCar-v0** pendant que l'agent essaie d'appliquer ce qu'il a appris. Après chaque essai, les performances de l'agent sont collectées, et vous verrez :
+  - **Un graphique des succès et échecs** (l'agent a-t-il réussi ou échoué à chaque essai ?).
+  - **Un graphique du nombre de pas nécessaires** pour chaque essai.
+
+### **Exécution finale :**
+- À la fin des essais, vous obtiendrez un résumé des performances de l'agent avec un taux de succès et des statistiques de pas de temps.
+
+---
+
+💡 **Conclusion** : Ce code est une démonstration simple avec un seul **alpha**. Il montre comment un agent peut apprendre et appliquer les concepts de **Q-Learning** pour résoudre un problème de type **MountainCar** en ajustant un seul paramètre clé, le **taux d'apprentissage (alpha)**.
+
+
+
+------------------------------
+# 2 - Démonstration
+------------------------------
+
 ```
 git clone https://github.com/hrhouma/RLCode2-1.git
 cd RLCode2-1
@@ -80,7 +144,7 @@ deactivate
 ```
 
 ---------------------------
-# Annexe :
+# 3 - Annexe :
 ---------------------------
 
 
